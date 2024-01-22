@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+header a{
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+}
+header a.active{
+    opacity: 1;
+}
+header a:hover{
+    opacity: 1;
+}
+.gallery{
+    position: relative;
+    height: 500px;
+}
+.gallery h2{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.gallery__container{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.gallery__item{
+    height: 100%;
+    overflow: hidden;
+}
+.gallery__item .image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery__item .shade{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.gallery .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    font-size: 20px;
+}
